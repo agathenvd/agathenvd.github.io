@@ -1,0 +1,108 @@
+@media screen and (max-width: 640px)
+{
+
+/* DEBUT ZONE DE TRAVAIL aside*/
+
+#bloc_page
+{
+  height: 300mm;
+  width: 210mm;
+  border : none;
+}
+
+#head_agathe
+{
+
+  text-align: center;
+  font-size: 4em;
+}
+
+span
+{
+color:  #212121;
+}
+
+.Dev_Web
+{
+  color: #424242;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.9em;
+  padding-right: 10mm;
+
+}
+
+aside
+{
+display: none;
+}
+
+#head
+{
+margin: auto;
+background-color: #FFCA28;
+}
+
+.Bloc_blanc
+{
+  margin: auto;
+
+
+}
+
+/* FIN DE LA ZONE DE TRAVAIL aside*/
+
+/* DEBUT DE LA ZONE DE TRAVAIL Bloc_blanc*/
+
+.Mise_en_page
+{
+  font-size: 1.5em;
+}
+
+.recommandation
+{
+  font-size: 1em;
+}
+
+.contenu
+{
+  width: 160mm;
+  font-size: 1em;
+  padding-left: 4mm;
+}
+
+.titre
+{
+  font-size: 1.2em;
+  padding-left: 4mm;
+}
+
+.Metier
+{
+  font-size: 1.2em;
+  padding-left: 4mm;
+}
+
+i
+{
+  margin-right: 3mm;
+}
+
+.ville
+{
+
+  margin-left: 3mm;
+}
+
+.date
+{
+  padding-right: 5mm;
+}
+
+ul
+{
+  font-size: 0.90em;
+}
+
+}
+/* FIN DE LA ZONE DE TRAVAIL Bloc_blanc */

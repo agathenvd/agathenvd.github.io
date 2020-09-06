@@ -1,0 +1,318 @@
+
+
+/* DEBUT ZONE DE TRAVAIL aside*/
+
+.contact
+{
+	color:#FFCA28;
+	background-color: #424242;
+	width: 65mm;
+	font-size:large;
+	text-align: center;
+}
+
+.coordonnees
+{
+	color: #616161;
+	font-size: 1em
+}
+
+#A_propos
+{
+	color:#FFCA28;
+	background-color: #424242;
+	width: 65mm;
+	text-align: center;
+	font-size: large;
+}
+
+.presentation
+{
+	color:#616161;
+	font-size: 0.70em;
+	font-weight: bold;
+	height: 136mm;
+	padding: 10mm;
+	text-align: justify;
+}
+
+.loisirs
+{
+	color:#FFCA28;
+	background-color: #424242;
+	width: 65mm;
+	text-align: center;
+	font-size: large;
+}
+
+#banniere_laterale
+{
+	height: 297mm;
+	background-color: #FFCA28;
+	position: relative;
+}
+
+aside
+{
+	float: left;
+	width: 65mm;
+	height: 296mm;
+}
+
+img
+{
+	border-radius: 100px;
+	height: 150px;
+}
+
+/* FIN ZONE DE TRAVAIL aside*/
+
+/* DEBUT ZONE DE TRAVAIL Bloc_blanc*/
+
+#bloc_page
+{
+	width: 210mm;
+	height:297mm;
+	border: solid black 1px;
+
+}
+
+#head
+{
+	margin-left: 80mm;
+}
+
+#head_agathe
+{
+	font-size: 3em;
+}
+
+span
+{
+	color: #FFCA28;
+}
+
+
+.Dev_Web
+{
+	color: #424242;
+	font-size: large;
+	font-weight: bold;
+	border-bottom: solid black 1px;
+
+
+
+}
+
+#agathe
+{
+	text-align : center;
+	font-size: 3em;
+	position: absolute;
+}
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('font/roboto-regular-webfont.woff2') format('woff2'),
+	url('font/roboto-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+	font-family: 'robotoregular';
+	width: 300px;
+	height :400px;
+}
+
+.Formation
+{
+	color:#212121;
+	font-size:medium;
+	font-weight: bold;
+	width: 200mm;
+	display: flex;
+	padding-bottom: 5mm;
+}
+
+.date
+{
+	color: #616161;
+	font-size: small;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	width: 25mm;
+	padding-left: 10mm;
+}
+
+.Etudes
+{
+	width: 15mm;
+	padding-left: 7mm;
+}
+
+.ville
+{
+	color: #616161;
+	font-size: small;
+	font-weight: bold;
+	padding-left: 15mm;
+
+}
+
+.contenu
+{
+	color: #616161;
+	font-size: x-small;
+	padding-right: 5px;
+	text-align: justify;
+	padding-bottom: 2mm;
+}
+
+.Contenu_DUT
+{
+	padding-bottom: 8mm;
+}
+
+p,ul
+{
+	color: #616161;
+	font-size: 0.70em;
+	font-weight: bold;
+	list-style-type:none;
+}
+
+.recommandation
+{
+	color:#212121;
+	font-weight: bold;
+	padding-top: 13mm;
+	padding-left: 4mm;
+}
+
+.reco
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.graduation
+{
+	color: #FFCA28;
+	vertical-align: bottom;
+	padding-top: 50px;
+	padding-left: 8mm;
+	padding-bottom: 2mm;
+}
+
+.luggage
+{
+	color: #FFCA28;
+	padding-top: 2mm;
+	padding-left: 8mm;
+	padding-bottom: 2mm;
+}
+
+.pen
+{
+	color: #FFCA28;
+	padding-top: 10mm;
+	padding-left: 8mm;
+	padding-bottom: 2mm;
+}
+
+.sport
+{
+	color: #424242;
+}
+
+.travel
+{
+	color: #424242;
+}
+
+.cook
+{
+	color: #424242;
+}
+
+.logos
+{
+	display: flex;
+	justify-content: space-around;
+	font-size: x-large;
+	padding-top: 5px;
+}
+
+.ligne
+{
+	width: 400px;
+	height: 2px;
+	padding-bottom: 6mm;
+}
+.photo
+{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.Fonction
+{
+	padding-left: 20mm;
+	color: #616161;
+	width: 90mm;
+	font-size: small;
+}
+
+.Titre
+{
+font-weight: bold;
+padding-bottom: 2mm;
+}
+
+.Metier
+{	font-size: 0.90em;
+	padding-bottom: 2mm;
+}
+
+.Mise_en_page
+{
+	display: flex;
+	flex-direction: row;
+	padding-left:
+}
+
+.grand_titre
+{
+	font-weight: bold;
+	color:#212121;
+	padding-top: 14mm;
+	padding-left: 4mm;
+	font-weight: bold;
+}
+
+.titre_experience
+{
+	font-weight: bold;
+	color:#212121;
+	padding-top: 3mm;
+	padding-left: 4mm;
+	font-weight: bold;
+}
+
+i
+{
+	font-size: x-large;
+	color: #FFCA28;
+	padding-right: 2mm;
+}
+
+.Bloc_blanc
+{
+	margin-left: 270px;
+}
+
+/* FIN ZONE DE TRAVAIL Bloc_blanc*/

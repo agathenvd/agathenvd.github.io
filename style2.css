@@ -1,0 +1,46 @@
+@media screen and (max-width: 640px)
+{
+
+  /* DEBUT ZONE DE TRAVAIL aside*/
+
+  #bloc_page
+  {
+    height: 667px;
+    width: 375px;
+    border: none;
+  }
+
+  #head_agathe
+  {
+    width: 375px;
+  }
+
+  .Dev_Web
+  {
+    color: #424242;
+    margin-left: auto;
+  }
+
+  aside
+  {
+    display: none;
+  }
+
+  .contact
+  {
+    height: 6mm;
+    width: 100mm;
+    padding-left: 30mm;
+  }
+
+  #head
+  {
+    margin-left: auto;
+  }
+
+  .Bloc_blanc
+  {
+    margin-left: auto;
+  }
+
+/* FIN DE LA ZONE DE TRAVAIL aside*/
