@@ -1,7 +1,4 @@
-
-
 /* DEBUT ZONE DE TRAVAIL aside*/
-
 .contact
 {
 	color:#FFCA28;
@@ -17,7 +14,7 @@
 	font-size: 1em
 }
 
-#A_propos
+#a_propos
 {
 	color:#FFCA28;
 	background-color: #424242;
@@ -65,6 +62,8 @@ img
 	height: 150px;
 }
 
+
+
 /* FIN ZONE DE TRAVAIL aside*/
 
 /* DEBUT ZONE DE TRAVAIL Bloc_blanc*/
@@ -74,7 +73,6 @@ img
 	width: 210mm;
 	height:297mm;
 	border: solid black 1px;
-
 }
 
 #head
@@ -93,15 +91,12 @@ span
 }
 
 
-.Dev_Web
+.dev_Web
 {
 	color: #424242;
 	font-size: large;
 	font-weight: bold;
 	border-bottom: solid black 1px;
-
-
-
 }
 
 #agathe
@@ -126,7 +121,7 @@ body
 	height :400px;
 }
 
-.Formation
+.formation
 {
 	color:#212121;
 	font-size:medium;
@@ -147,7 +142,7 @@ body
 	padding-left: 10mm;
 }
 
-.Etudes
+.etudes
 {
 	width: 15mm;
 	padding-left: 7mm;
@@ -159,7 +154,6 @@ body
 	font-size: small;
 	font-weight: bold;
 	padding-left: 15mm;
-
 }
 
 .contenu
@@ -171,7 +165,7 @@ body
 	padding-bottom: 2mm;
 }
 
-.Contenu_DUT
+.contenu_DUT
 {
 	padding-bottom: 8mm;
 }
@@ -259,7 +253,7 @@ p,ul
 	padding-bottom: 20px;
 }
 
-.Fonction
+.fonction
 {
 	padding-left: 20mm;
 	color: #616161;
@@ -267,18 +261,18 @@ p,ul
 	font-size: small;
 }
 
-.Titre
+.titre
 {
 font-weight: bold;
 padding-bottom: 2mm;
 }
 
-.Metier
+.metier
 {	font-size: 0.90em;
 	padding-bottom: 2mm;
 }
 
-.Mise_en_page
+.mise_en_page
 {
 	display: flex;
 	flex-direction: row;
@@ -310,7 +304,7 @@ i
 	padding-right: 2mm;
 }
 
-.Bloc_blanc
+.bloc_blanc
 {
 	margin-left: 270px;
 }

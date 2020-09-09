@@ -5,14 +5,13 @@
 
 #bloc_page
 {
-  height: 300mm;
+  height: 350mm;
   width: 210mm;
   border : none;
 }
 
 #head_agathe
 {
-
   text-align: center;
   font-size: 4em;
 }
@@ -22,39 +21,88 @@ span
 color:  #212121;
 }
 
-.Dev_Web
+.dev_web
 {
   color: #424242;
   margin-left: auto;
   text-align: center;
   font-size: 1.9em;
   padding-right: 10mm;
-
-}
-
-aside
-{
-display: none;
 }
 
 #head
 {
 margin: auto;
 background-color: #FFCA28;
+position: fixed;
+top: 8px;
+left: 8px;
+width: 208mm;
 }
 
-.Bloc_blanc
+.bloc_blanc
 {
   margin: auto;
+}
 
+aside
+{
+  width: auto;
+  height: auto;
+  display: flex;
+  float: none;
+}
+
+#banniere_laterale
+{
+  background-color: transparent;
+  height: auto;
+}
+
+.bloc_lateral
+{
+  display: flex;
+  width: 210mm;
+}
+
+.photo
+{
+  display: none;
+}
+
+.presentation
+{
+  height: 100mm;
+  width: 60mm;
+  font-size: 0.9em;
+  padding: 5mm;
+}
+
+.coordonnees
+{
+  margin-right: 5mm;
 
 }
+
+.contact
+{
+  padding-top: 35mm;
+  height: 7mm;
+}
+
+#a_propos
+{
+  padding-top: 35mm;
+  height: 7mm;
+  width: 70mm;
+}
+
 
 /* FIN DE LA ZONE DE TRAVAIL aside*/
 
 /* DEBUT DE LA ZONE DE TRAVAIL Bloc_blanc*/
 
-.Mise_en_page
+.mise_en_page
 {
   font-size: 1.5em;
 }
@@ -77,7 +125,7 @@ background-color: #FFCA28;
   padding-left: 4mm;
 }
 
-.Metier
+.metier
 {
   font-size: 1.2em;
   padding-left: 4mm;
@@ -90,7 +138,6 @@ i
 
 .ville
 {
-
   margin-left: 3mm;
 }
 
