@@ -72,7 +72,7 @@ aside
 
 .presentation
 {
-  height: 100mm;
+  height: auto;
   width: 60mm;
   font-size: 0.9em;
   padding: 5mm;
@@ -86,13 +86,20 @@ aside
 
 .contact
 {
-  padding-top: 35mm;
+  margin-top: 35mm;
   height: 7mm;
 }
 
 #a_propos
 {
-  padding-top: 35mm;
+  margin-top: 35mm;
+  height: 7mm;
+  width: 68mm;
+}
+
+.loisirs
+{
+  margin-top: 35mm;
   height: 7mm;
   width: 70mm;
 }
