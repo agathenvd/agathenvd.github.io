@@ -6,6 +6,7 @@
 	width: 65mm;
 	font-size:large;
 	text-align: center;
+	margin-top: 16mm;
 }
 
 .coordonnees
@@ -28,7 +29,7 @@
 	color:#616161;
 	font-size: 0.70em;
 	font-weight: bold;
-	height: 136mm;
+	height: 160mm;
 	padding: 10mm;
 	text-align: justify;
 }
@@ -44,9 +45,9 @@
 
 #banniere_laterale
 {
-	height: 297mm;
 	background-color: #FFCA28;
 	position: relative;
+	overflow-y: auto;
 }
 
 aside
@@ -56,10 +57,15 @@ aside
 	height: 296mm;
 }
 
-img
+.photocv
 {
+	border: 3px solid  #9E9E9E;
 	border-radius: 100px;
 	height: 150px;
+	padding: 10 10 10 10;
+	margin-top: 5mm;
+	margin-left: 11mm;
+
 }
 
 
@@ -71,7 +77,6 @@ img
 #bloc_page
 {
 	width: 210mm;
-	height:297mm;
 	border: solid black 1px;
 }
 
@@ -80,9 +85,10 @@ img
 	margin-left: 80mm;
 }
 
-#head_agathe
+h1
 {
 	font-size: 3em;
+
 }
 
 span
@@ -96,8 +102,9 @@ span
 	color: #424242;
 	font-size: large;
 	font-weight: bold;
-	border-bottom: solid black 1px;
+	border-bottom: 1px solid black;
 }
+
 
 #agathe
 {
@@ -195,7 +202,7 @@ p,ul
 {
 	color: #FFCA28;
 	vertical-align: bottom;
-	padding-top: 50px;
+	padding-top: 17px;
 	padding-left: 8mm;
 	padding-bottom: 2mm;
 }
@@ -203,7 +210,7 @@ p,ul
 .luggage
 {
 	color: #FFCA28;
-	padding-top: 2mm;
+	padding-top: 4mm;
 	padding-left: 8mm;
 	padding-bottom: 2mm;
 }
@@ -213,21 +220,48 @@ p,ul
 	color: #FFCA28;
 	padding-left: 8mm;
 	padding-bottom: 2mm;
+	padding-top: 4mm;
 }
 
-.sport
+
+.sport 
 {
-	color: #424242;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    margin-bottom: 10px;
+}
+
+.sport i 
+{
+    color: #424242;
+    padding-left: 5px;
 }
 
 .travel
 {
-	color: #424242;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    margin-bottom: 10px;
+}
+
+.travel i 
+{
+    color: #424242;
+    padding-left: 9px;
 }
 
 .cook
 {
-	color: #424242;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.cook i 
+{
+    color: #424242;
+    padding-left: 5px;
 }
 
 .logos
@@ -235,7 +269,8 @@ p,ul
 	display: flex;
 	justify-content: space-around;
 	font-size: x-large;
-	padding-top: 5px;
+	padding-top: 5mm;
+	border-radius: 1px solid black;
 }
 
 .ligne
@@ -243,12 +278,6 @@ p,ul
 	width: 400px;
 	height: 2px;
 	padding-bottom: 6mm;
-}
-.photo
-{
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 .fonction
@@ -277,11 +306,10 @@ padding-bottom: 2mm;
 	padding-left:
 }
 
-.grand_titre
+h4
 {
 	font-weight: bold;
 	color:#212121;
-	padding-top: 14mm;
 	padding-left: 4mm;
 	font-weight: bold;
 }
@@ -290,7 +318,6 @@ padding-bottom: 2mm;
 {
 	font-weight: bold;
 	color:#212121;
-	padding-top: 3mm;
 	padding-left: 4mm;
 	font-weight: bold;
 }
@@ -305,10 +332,5 @@ i
 .bloc_blanc
 {
 	margin-left: 270px;
-}
-
-h6
-{
-	display: none;
 }
 /* FIN ZONE DE TRAVAIL Bloc_blanc*/

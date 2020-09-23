@@ -10,7 +10,7 @@
   border : none;
 }
 
-#head_agathe
+h1
 {
   text-align: center;
   font-size: 4em;
@@ -23,7 +23,7 @@ color:  #212121;
 
 .dev_web
 {
-  color: #424242;
+
   margin-left: auto;
   text-align: center;
   font-size: 1.9em;
