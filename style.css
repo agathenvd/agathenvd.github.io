@@ -29,7 +29,7 @@
 	color:#616161;
 	font-size: 0.70em;
 	font-weight: bold;
-	height: 160mm;
+	height: 146mm;
 	padding: 10mm;
 	text-align: justify;
 }
@@ -87,7 +87,7 @@ aside
 
 h1
 {
-	font-size: 3em;
+	padding: 1mm;
 
 }
 
@@ -102,9 +102,22 @@ span
 	color: #424242;
 	font-size: large;
 	font-weight: bold;
-	border-bottom: 1px solid black;
+	margin-top: 15px;
+	margin-left: 4px;
 }
 
+.trait
+{
+	border-bottom: 2px solid #FFCA28;
+	width: 45px;
+	margin-left: 4px;
+}
+
+.nomprenom
+{
+	height: 35px;
+	font-size: x-large;
+}
 
 #agathe
 {
@@ -224,14 +237,14 @@ p,ul
 }
 
 
-.sport 
+.sport
 {
     border-radius: 50%;
     border: 3px solid #424242;
     margin-bottom: 10px;
 }
 
-.sport i 
+.sport i
 {
     color: #424242;
     padding-left: 5px;
@@ -244,7 +257,7 @@ p,ul
     margin-bottom: 10px;
 }
 
-.travel i 
+.travel i
 {
     color: #424242;
     padding-left: 9px;
@@ -258,7 +271,7 @@ p,ul
     padding: 2px;
 }
 
-.cook i 
+.cook i
 {
     color: #424242;
     padding-left: 5px;
