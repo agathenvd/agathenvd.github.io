@@ -13,7 +13,6 @@
 h1
 {
   text-align: center;
-  font-size: 4em;
 }
 
 span
@@ -26,8 +25,13 @@ color:  #212121;
 
   margin-left: auto;
   text-align: center;
+  font-size: 1.4em;
+  margin-top: 24px;
+}
+
+.nomprenom
+{
   font-size: 1.9em;
-  padding-right: 10mm;
 }
 
 #head
@@ -53,6 +57,20 @@ aside
   float: none;
 }
 
+.luggage
+{
+  padding-top: 7mm;
+}
+
+.graduation
+{
+  padding-top: 22px;
+}
+
+.pen
+{
+  padding-top: 6mm;
+}
 #banniere_laterale
 {
   background-color: transparent;
@@ -111,7 +129,7 @@ aside
 
 .mise_en_page
 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .recommandation
