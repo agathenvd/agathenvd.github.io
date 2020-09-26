@@ -62,6 +62,7 @@ aside
 	border: 3px solid  #9E9E9E;
 	border-radius: 100px;
 	height: 150px;
+	padding: 10 10 10 10;
 	margin-top: 5mm;
 	margin-left: 11mm;
 
@@ -282,6 +283,7 @@ p,ul
 	justify-content: space-around;
 	font-size: x-large;
 	padding-top: 5mm;
+	border-radius: 1px solid black;
 }
 
 .ligne
@@ -314,6 +316,7 @@ padding-bottom: 2mm;
 {
 	display: flex;
 	flex-direction: row;
+	padding-left:
 }
 
 h4
