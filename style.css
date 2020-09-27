@@ -189,7 +189,7 @@ body
 	padding-bottom: 8mm;
 }
 
-p,ul
+ul
 {
 	color: #616161;
 	font-size: 0.70em;
@@ -238,42 +238,42 @@ p,ul
 
 .sport
 {
-    border-radius: 50%;
-    border: 3px solid #424242;
-    margin-bottom: 10px;
+	border-radius: 50%;
+	border: 3px solid #424242;
+	margin-bottom: 10px;
 }
 
 .sport i
 {
-    color: #424242;
-    padding-left: 5px;
+	color: #424242;
+	padding-left: 5px;
 }
 
 .travel
 {
-    border-radius: 50%;
-    border: 3px solid #424242;
-    margin-bottom: 10px;
+	border-radius: 50%;
+	border: 3px solid #424242;
+	margin-bottom: 10px;
 }
 
 .travel i
 {
-    color: #424242;
-    padding-left: 9px;
+	color: #424242;
+	padding-left: 9px;
 }
 
 .cook
 {
-    border-radius: 50%;
-    border: 3px solid #424242;
-    margin-bottom: 10px;
-    padding: 2px;
+	border-radius: 50%;
+	border: 3px solid #424242;
+	margin-bottom: 10px;
+	padding: 2px;
 }
 
 .cook i
 {
-    color: #424242;
-    padding-left: 5px;
+	color: #424242;
+	padding-left: 5px;
 }
 
 .logos
@@ -301,8 +301,9 @@ p,ul
 
 .titre
 {
-font-weight: bold;
-padding-bottom: 2mm;
+	font-weight: bold;
+	padding-bottom: 2mm;
+	display: flex;
 }
 
 .metier
@@ -342,5 +343,10 @@ i
 .bloc_blanc
 {
 	margin-left: 270px;
+}
+
+p
+{
+	margin: 0;
 }
 /* FIN ZONE DE TRAVAIL Bloc_blanc*/
