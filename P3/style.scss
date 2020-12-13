@@ -1,25 +1,6 @@
 /* Accueil */
-/* Définition des variables */
-@media (max-width: 599px) {
-}
-$premiere: #9356DC; 
-$seconde : #FF79DA;
-$troisieme : #99E2D0;
-$quatrieme : #E0E0E0;
-$cinquieme : #F5F5F5;
-$sixieme : #616161;
-$septieme : #424242;
-$huitieme : #FFFFFF;
-$neuvieme : #BDBDBD;
-$dixieme : #EEEEEE;
-$onzieme : #EDE7F6;
-$douzieme : #212121;
-/* Définition des mixins*/
-@mixin mep-footer ($colorf,$paddingtf,$paddinglf){ 
-color : $colorf;
-padding-top : $paddingtf;
-padding-left : $paddinglf;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
 @font-face {
   font-family: 'robotoregular';
   src: url('Base/webfonts/roboto/roboto_regular_macroman/Roboto-Regular-webfont.eot');
@@ -46,18 +27,18 @@ body
   width: 100%;
   margin: 0%;
 }
-.titre_accueil
+.titre
 {
   margin-left: 3%;
 }
-.titre_menu
+.titre__menu
 {
   font-size: 2.7em;
   color : $douzieme;
   font-weight: bolder;
   height: 20px;
 }
-.titre_restau
+.titre__restau
 {
   font-size: 2.7em;
   color : $douzieme;
@@ -112,18 +93,19 @@ a{
   text-align: center;
   height: 600px;
 }
-.reservation, .fonctionnement, .restaurants
+.context__reserv, .fonctionnement, .restaurants
 {
   font-size: 50px;
   font-weight: 900;
   padding-top: 10mm;
 }
-.decouverte
+.context__decouv
 {
   color : $sixieme;
   font-size: 2em;
 }
-.bouton_explorer
+/* Bouton explorer accueil */ 
+.context__btn
 {
   background: linear-gradient(lighten($seconde, 5) 0%, darken($premiere, 10) 100%);
   border-radius: 50px;
@@ -167,7 +149,7 @@ a{
   margin-left: 7mm;
   font-weight: 900;
 }
-.numerotation
+.explications__numerotation
 {
   font-size: 2em;
   color : $huitieme;
@@ -175,7 +157,7 @@ a{
   top: 125px;
   margin-left: 20px;
 }
-.cercle 
+.explications__cercle 
 { 
 	height: 50px; 
 	width: 50px; 
@@ -198,7 +180,7 @@ a{
 {
   color : $premiere;
 }
-.choix_restau, .composition, .degustez
+.choix, .composition, .degustez
 {
   width: 90%;
   margin-left:5%;
@@ -209,7 +191,7 @@ a{
   padding-bottom: 10mm;
   box-shadow: 6px 6px 20px $neuvieme;
 }
-.choix_restau, .composition 
+.choix, .composition 
 {
   background-color: $dixieme;
 }
@@ -218,7 +200,7 @@ a{
   background-color: $onzieme;
   margin-bottom: 50mm;
 }
-.choix
+.choix__restau
 {
   font-size: 2em;
   font-weight: 900;
@@ -228,7 +210,7 @@ a{
   background-color: $dixieme;
   height: 1130mm;
 }
-.background_propositions
+.propositions
 {
 background-color: $huitieme;
   border-radius: 30px;
@@ -246,8 +228,11 @@ background-color: $huitieme;
   display: none;
 }
 .icones_favoris:hover .heart_background{
-    display: inline;
     color: $premiere;
+    display: block;
+    background: -webkit-linear-gradient($premiere, $seconde);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .icones_favoris:hover .heart_icone  {
     display: none;
@@ -268,6 +253,9 @@ background-color: $huitieme;
 .icones_favoris_accueil:hover .heart_background_accueil{
     display: inline;
     color: $premiere;
+    background: -webkit-linear-gradient($premiere, $seconde);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .icones_favoris_accueil:hover .heart_icone_accueil  {
     display: none;
@@ -370,9 +358,10 @@ footer
   margin-left: 5%;
   padding-top: 5mm;
 }
+/* Arrivée progressive menu */
 @keyframes transition {
   0%   { margin-bottom: 0; }
-  100% { margin-bottom: 100; }
+  100% { margin-bottom: 35px; }
   }
   @keyframes opacity {
   0%   { opacity: 0; }
@@ -391,7 +380,6 @@ footer
   padding-top: 1mm;
   font-size: 2em;
   opacity: 0;
-  transition-duration: 1s;
   animation: transition 2s , opacity 3s forwards;
 }
 .btn_check
@@ -402,12 +390,14 @@ footer
   margin-left: 95%;
   height: 0;
 }
+/* animation commmande menu */
 @keyframes carre_deploiement 
 	{ 
-		0% {transform:translateX(0) }
-		100% {transform :translateX(-70%);}
+		0% {transform:scale(0);}
+    100% {transform :translateX(-70%);
+    }
   }
-#entree1:hover .box{ 
+.entree:hover .box{ 
   position: relative;
   bottom: 78px;
   border-top-right-radius: 30px;
@@ -416,53 +406,15 @@ footer
   width: 170px;
   height: 184px;
   background: $troisieme; 
-  animation : carre_deploiement 7s 0s forwards;
+  animation : carre_deploiement 1s forwards;
+  transform: scale(1);
   i {
     position: relative;
+    left: 100px;
     font-size: 1.7em;
     top: 70px;
     margin-left: 60px;
-    transform: rotate(360deg);
-    transition: transform 1000ms;
-    color: $huitieme;
-  }
-}
-#entree2:hover .box{ 
-  position: relative;
-  bottom: 78px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: $troisieme;
-  width: 170px;
-  height: 184px;
-  background: $troisieme; 
-  animation : carre_deploiement 500ms 0s forwards;
-  i {
-    position: relative;
-    font-size: 1.7em;
-    top: 70px;
-    margin-left: 60px;
-    transform: rotate(360deg);
-    transition: transform 1000ms;
-    color: $huitieme;
-  }
-}
-#entree3:hover .box{ 
-  position: relative;
-  bottom: 78px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: $troisieme;
-  width: 170px;
-  height: 184px;
-  background: $troisieme; 
-  animation : carre_deploiement 500ms 0s forwards;
-  i {
-    position: relative;
-    font-size: 1.7em;
-    top: 70px;
-    margin-left: 60px;
-    transform: rotate(360deg);
+    transform: translateX(-100px) rotate(360deg);
     transition: transform 1000ms;
     color: $huitieme;
   }
@@ -479,10 +431,11 @@ footer
   animation : carre_deploiement 500ms 0s ease-in-out forwards;
   i {
     position: relative;
+    left: 100px;
     font-size: 1.7em;
     top: 70px;
     margin-left: 60px;
-    transform: rotate(360deg);
+    transform: translateX(-100px) rotate(360deg);
     transition: transform 1000ms;
     color: $huitieme;
   }
@@ -499,10 +452,11 @@ footer
   animation : carre_deploiement 500ms 0s ease-in-out forwards;
   i {
     position: relative;
+    left: 100px;
     font-size: 1.7em;
     top: 90px;
     margin-left: 70px;
-    transform: rotate(360deg);
+    transform: translateX(-100px) rotate(360deg);
     transition: transform 1000ms;
     color: $huitieme;
   }
@@ -535,10 +489,11 @@ footer
   animation : carre_deploiement 500ms 0s ease-in-out forwards;
   i {
     position: relative;
+    left: 100px;
     font-size: 1.7em;
     top: 70px;
     margin-left: 60px;
-    transform: rotate(360deg);
+    transform: translateX(-100px) rotate(360deg);
     transition: transform 1000ms;
     color: $huitieme;
   }
@@ -571,6 +526,7 @@ footer
   font-weight: 900;
   height: 25px;
 }
+/* Bouton commander */
 .bouton_commander
 {
   background: linear-gradient(lighten($seconde, 5) 0%, darken($premiere, 10) 100%);
@@ -638,10 +594,9 @@ footer
   width: 32px;
   height: 32px;
   background: $seconde;
-  animation: lds-heart 2s  cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  animation: lds-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
-.lds-heart div:after,
-.lds-heart div:before {
+.lds-heart div:after, .lds-heart div:before {
   content: " ";
   position: absolute;
   display: block;

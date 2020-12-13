@@ -21,18 +21,18 @@ body {
   margin: 0%;
 }
 
-.titre_accueil {
+.titre {
   margin-left: 3%;
 }
 
-.titre_menu {
+.titre__menu {
   font-size: 2.7em;
   color: #212121;
   font-weight: bolder;
   height: 20px;
 }
 
-.titre_restau {
+.titre__restau {
   font-size: 2.7em;
   color: #212121;
   padding-bottom: 10mm;
@@ -89,18 +89,18 @@ a {
   height: 600px;
 }
 
-.reservation, .fonctionnement, .restaurants {
+.context__reserv, .fonctionnement, .restaurants {
   font-size: 50px;
   font-weight: 900;
   padding-top: 10mm;
 }
 
-.decouverte {
+.context__decouv {
   color: #616161;
   font-size: 2em;
 }
 
-.bouton_explorer {
+.context__btn {
   background: linear-gradient(#ff93e1 0%, #782cd3 100%);
   border-radius: 50px;
   width: 40%;
@@ -112,13 +112,13 @@ a {
   transition: transform 300ms;
   z-index: 1;
 }
-.bouton_explorer:hover {
+.context__btn:hover {
   transform: scale(1.15);
 }
-.bouton_explorer:hover::after {
+.context__btn:hover::after {
   opacity: 1;
 }
-.bouton_explorer::after {
+.context__btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -132,7 +132,7 @@ a {
   transition: opacity 250ms;
   border-radius: 50px;
 }
-.bouton_explorer p {
+.context__btn p {
   color: #FFFFFF;
   font-size: 2em;
   text-decoration: none;
@@ -144,7 +144,7 @@ a {
   font-weight: 900;
 }
 
-.numerotation {
+.explications__numerotation {
   font-size: 2em;
   color: #FFFFFF;
   position: relative;
@@ -152,13 +152,13 @@ a {
   margin-left: 20px;
 }
 
-.cercle {
+.explications__cercle {
   height: 50px;
   width: 50px;
   background-color: #9356DC;
   border-radius: 50%;
 }
-.cercle p {
+.explications__cercle p {
   text-align: center;
   padding-top: 3px;
 }
@@ -175,7 +175,7 @@ a {
   color: #9356DC;
 }
 
-.choix_restau, .composition, .degustez {
+.choix, .composition, .degustez {
   width: 90%;
   margin-left: 5%;
   border-radius: 50px;
@@ -186,7 +186,7 @@ a {
   box-shadow: 6px 6px 20px #BDBDBD;
 }
 
-.choix_restau, .composition {
+.choix, .composition {
   background-color: #EEEEEE;
 }
 
@@ -195,7 +195,7 @@ a {
   margin-bottom: 50mm;
 }
 
-.choix {
+.choix__restau {
   font-size: 2em;
   font-weight: 900;
 }
@@ -205,7 +205,7 @@ a {
   height: 1130mm;
 }
 
-.background_propositions {
+.propositions {
   background-color: #FFFFFF;
   border-radius: 30px;
   margin-bottom: 10mm;
@@ -225,8 +225,11 @@ a {
 }
 
 .icones_favoris:hover .heart_background {
-  display: inline;
   color: #9356DC;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .icones_favoris:hover .heart_icone {
@@ -252,6 +255,9 @@ a {
 .icones_favoris_accueil:hover .heart_background_accueil {
   display: inline;
   color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .icones_favoris_accueil:hover .heart_icone_accueil {
@@ -362,7 +368,7 @@ footer h6 {
     margin-bottom: 0;
   }
   100% {
-    margin-bottom: 100;
+    margin-bottom: 35px;
   }
 }
 @keyframes opacity {
@@ -385,7 +391,6 @@ footer h6 {
   padding-top: 1mm;
   font-size: 2em;
   opacity: 0;
-  transition-duration: 1s;
   animation: transition 2s, opacity 3s forwards;
 }
 
@@ -399,13 +404,13 @@ footer h6 {
 
 @keyframes carre_deploiement {
   0% {
-    transform: translateX(0);
+    transform: scale(0);
   }
   100% {
     transform: translateX(-70%);
   }
 }
-#entree1:hover .box {
+.entree:hover .box {
   position: relative;
   bottom: 78px;
   border-top-right-radius: 30px;
@@ -414,56 +419,16 @@ footer h6 {
   width: 170px;
   height: 184px;
   background: #99E2D0;
-  animation: carre_deploiement 7s 0s forwards;
+  animation: carre_deploiement 1s forwards;
+  transform: scale(1);
 }
-#entree1:hover .box i {
+.entree:hover .box i {
   position: relative;
+  left: 100px;
   font-size: 1.7em;
   top: 70px;
   margin-left: 60px;
-  transform: rotate(360deg);
-  transition: transform 1000ms;
-  color: #FFFFFF;
-}
-
-#entree2:hover .box {
-  position: relative;
-  bottom: 78px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: #99E2D0;
-  width: 170px;
-  height: 184px;
-  background: #99E2D0;
-  animation: carre_deploiement 500ms 0s forwards;
-}
-#entree2:hover .box i {
-  position: relative;
-  font-size: 1.7em;
-  top: 70px;
-  margin-left: 60px;
-  transform: rotate(360deg);
-  transition: transform 1000ms;
-  color: #FFFFFF;
-}
-
-#entree3:hover .box {
-  position: relative;
-  bottom: 78px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  color: #99E2D0;
-  width: 170px;
-  height: 184px;
-  background: #99E2D0;
-  animation: carre_deploiement 500ms 0s forwards;
-}
-#entree3:hover .box i {
-  position: relative;
-  font-size: 1.7em;
-  top: 70px;
-  margin-left: 60px;
-  transform: rotate(360deg);
+  transform: translateX(-100px) rotate(360deg);
   transition: transform 1000ms;
   color: #FFFFFF;
 }
@@ -481,10 +446,11 @@ footer h6 {
 }
 .plat:hover .box i {
   position: relative;
+  left: 100px;
   font-size: 1.7em;
   top: 70px;
   margin-left: 60px;
-  transform: rotate(360deg);
+  transform: translateX(-100px) rotate(360deg);
   transition: transform 1000ms;
   color: #FFFFFF;
 }
@@ -502,10 +468,11 @@ footer h6 {
 }
 .plat_filet:hover .box i {
   position: relative;
+  left: 100px;
   font-size: 1.7em;
   top: 90px;
   margin-left: 70px;
-  transform: rotate(360deg);
+  transform: translateX(-100px) rotate(360deg);
   transition: transform 1000ms;
   color: #FFFFFF;
 }
@@ -539,10 +506,11 @@ footer h6 {
 }
 .dessert:hover .box i {
   position: relative;
+  left: 100px;
   font-size: 1.7em;
   top: 70px;
   margin-left: 60px;
-  transform: rotate(360deg);
+  transform: translateX(-100px) rotate(360deg);
   transition: transform 1000ms;
   color: #FFFFFF;
 }
@@ -651,8 +619,7 @@ footer h6 {
   animation: lds-heart 2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
 }
 
-.lds-heart div:after,
-.lds-heart div:before {
+.lds-heart div:after, .lds-heart div:before {
   content: " ";
   position: absolute;
   display: block;
