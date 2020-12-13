@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Accueil */
-/* Définition des variables */
 /* Définition des mixins*/
 @font-face {
   font-family: "robotoregular";
@@ -55,6 +54,7 @@ a {
 .logo_header {
   text-align: center;
   font-size: 3em;
+  padding: 10px;
 }
 
 .background_logo {
@@ -100,6 +100,7 @@ a {
   font-size: 2em;
 }
 
+/* Bouton explorer accueil */
 .context__btn {
   background: linear-gradient(#ff93e1 0%, #782cd3 100%);
   border-radius: 50px;
@@ -333,7 +334,7 @@ footer h6 {
   position: relative;
   font-size: 3em;
   height: 0px;
-  top: 40px;
+  top: 30px;
   margin-left: 40px;
 }
 .fleche :hover {
@@ -363,6 +364,7 @@ footer h6 {
   padding-top: 5mm;
 }
 
+/* Arrivée progressive menu */
 @keyframes transition {
   0% {
     margin-bottom: 0;
@@ -402,6 +404,7 @@ footer h6 {
   height: 0;
 }
 
+/* animation commmande menu */
 @keyframes carre_deploiement {
   0% {
     transform: scale(0);
@@ -548,6 +551,7 @@ footer h6 {
   height: 25px;
 }
 
+/* Bouton commander */
 .bouton_commander {
   background: linear-gradient(#ff93e1 0%, #782cd3 100%);
   border-radius: 20mm;
