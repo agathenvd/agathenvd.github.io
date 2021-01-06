@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="style.scss"/> <!--Pour les résolutions inférieures à 1280px-->
+    <script src="https://kit.fontawesome.com/494b22ee41.js" crossorigin="anonymous"></script>
+    <title> Mentions légales </title>
+  </head>
